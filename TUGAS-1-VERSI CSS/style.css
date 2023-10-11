@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+}
+
+a{
+    font-size: 1.5vh;
+}
+.wrapper{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a:hover{
+    color: rgb(46, 65, 172);
+    
+}
+
+.nav {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    background-color: rgb(102, 153, 230);
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1; 
+    overflow-x: hidden;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+ .menu ul li {
+    text-decoration: none;
+    margin: 0 2vw;
+}
+
+.content-page{
+    padding: 2vh 2vw;
+    margin-top: 10vh;
+    width: 90vw;
+    height: 100vh;
+    background-color: rgb(236, 236, 236);
+    border-radius:10px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#chartContainer{
+    margin-top: 3vh;
+}
+.content-footer{
+    background-color:rgb(72, 116, 184);
+    padding: 0 2vw;
+    margin-top: 3vh;
+    width: 96vw;
+    height: 26vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.menu-footer ul{
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    margin: 2vh 0;
+}
+
+.menu-footer ul li{
+    margin: 0 2vw;
+}
+
+li{
+    margin-left: 3vw;
+}
+.content-footer p{
+    font-size: 2vh;
+}
+
+.menu ul li{
+    display: flex;
+    align-items: center;
+
+}
+.canvasjs-chart-canvas{
+    border-radius: 20px;
+}
+button{
+    border-radius: 20px;
+    position: absolute;
+    top: 0.8vh;
+    right: 0.8vh;
+}
+
+
+/* ?Untuk Tampilan Mobile / HP */
+@media screen and (max-width:728px) {
+    .nav-2nd {
+        width: 90vw;
+    }
+
+    h1{
+        font-size: 4vh;
+    }
+
+}

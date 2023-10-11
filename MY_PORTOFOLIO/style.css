@@ -1,0 +1,182 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.867);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+nav {
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    display: flex;
+    height: 8vh;
+    position: fixed;
+    background-color:  #353333;
+    overflow-y: hidden;
+}
+
+nav .logo {
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+nav .logo h1{
+    color: rgb(81, 65, 226);
+    text-shadow: 1px 2px black;
+}
+
+nav .menu ul {
+    list-style: none ;
+    display: flex;
+}
+
+nav .menu ul li {
+    margin: 0px 1vw;
+}
+
+nav .menu ul li a{
+    text-decoration: none;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+ul li a:hover {
+    color: rgb(137, 137, 137);
+
+}
+
+.img-1 a:hover{
+    color: #727272;
+}
+
+.content {
+    width: 90vw;
+    display: flex;
+    height: 60vh;
+    padding:  40vh 3vh 0;
+    overflow-y: hidden;
+  
+
+}
+
+.content .content-left {
+    width: 50vw;
+    margin-right: 5vw;
+    overflow-y: hidden;
+}
+
+.content .content-left h1,h3{
+    margin-bottom:1vh ;
+}
+
+.content .content-right{
+
+    width: 30vw;
+    height: 30vw;
+    background-size: cover;
+    background-color: aqua;
+    background-image: url("https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=996&t=st=1695270454~exp=1695271054~hmac=3dd71a9c306560406351f8749586d39a5177800c186736960d5d3bc009bc5bb8");
+    animation: mymove 6s infinite;
+}
+
+@keyframes mymove {
+    0%{
+        border-radius: 30% 70% 70% 30% / 30% 59% 41% 70%   ;
+    }25%{
+        border-radius: 54% 46% 81% 19% / 46% 94% 6% 54%   ;
+    }50%{
+        border-radius: 30% 70% 29% 71% / 71% 25% 75% 29%   ;
+    }75%{
+        border-radius: 30% 70% 29% 71% / 71% 25% 75% 29%  ;
+    }100%{
+        border-radius:30% 70% 70% 30% / 30% 59% 41% 70%;
+    }
+}
+
+.content .content-left h1{
+    color: hsl(208, 77%, 49%);
+    text-shadow: 1px 2px rgb(67, 86, 122);
+}
+
+.content .content-left h3{
+    color: rgb(198, 38, 212);
+    text-shadow: #1d131b;
+}
+
+.content-2 {
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    padding: 0 2vw;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+}
+
+.box img{
+    width: 20vw;
+    margin: 2vw;
+}
+
+.playlist h1{
+    margin-top: 10vh;
+    margin: 10vh 2vw 0;
+}
+
+.img-1 a{
+    margin: 2vw;
+}
+
+.content-1 {
+    padding: 2vh 5vw;
+
+}
+
+.content-1 .isi p{
+    text-align: justify;
+}
+
+
+/* Tampilan mobile */
+@media screen and (max-width:728px) {
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15vh;
+        height: 80vh;
+    }
+
+    .content .content-left{
+        text-align: center;
+        width: 80vw;
+        margin-bottom: 10vh;
+    }
+    
+    
+    .content .content-left h1,h3{
+        margin-bottom:1.5vh ;
+    }
+
+    .content .content-right{
+        width: 60vw;
+        height: 60vw;
+    }
+
+}
